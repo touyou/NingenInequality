@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2B0E865B234841800098D5E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E865A234841800098D5E6 /* AppDelegate.swift */; };
 		2B0E865D234841810098D5E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E865C234841810098D5E6 /* SceneDelegate.swift */; };
-		2B0E865F234841810098D5E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E865E234841810098D5E6 /* ViewController.swift */; };
+		2B0E865F234841810098D5E6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E865E234841810098D5E6 /* MapViewController.swift */; };
 		2B0E8662234841810098D5E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0E8660234841810098D5E6 /* Main.storyboard */; };
 		2B0E8664234841830098D5E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0E8663234841830098D5E6 /* Assets.xcassets */; };
 		2B0E8667234841830098D5E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0E8665234841830098D5E6 /* LaunchScreen.storyboard */; };
@@ -19,6 +19,10 @@
 		2B0E867B234847130098D5E6 /* BeerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E867A234847130098D5E6 /* BeerAPI.swift */; };
 		2B0E867D234847710098D5E6 /* BeerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E867C234847710098D5E6 /* BeerRequest.swift */; };
 		2B0E867F2348494F0098D5E6 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E867E2348494F0098D5E6 /* Items.swift */; };
+		2B1E867B23486D1800D25A32 /* SuggestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E867A23486D1800D25A32 /* SuggestViewController.swift */; };
+		2B1E867D23486D2500D25A32 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E867C23486D2500D25A32 /* RegisterViewController.swift */; };
+		2B1E867F23486E1000D25A32 /* Koloda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E867E23486E1000D25A32 /* Koloda.framework */; };
+		2B1E868023486E1000D25A32 /* Koloda.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E867E23486E1000D25A32 /* Koloda.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3FF9E2B18F5CB0D3FC56CA83 /* Pods_iOS_Saketify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5793985DD414D49F990FA17D /* Pods_iOS_Saketify.framework */; };
 		4632C77A234867B0002EE84B /* FirebaseItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C779234867B0002EE84B /* FirebaseItems.swift */; };
 		4632C77C2348680C002EE84B /* FirebaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C77B2348680C002EE84B /* FirebaseAPI.swift */; };
@@ -32,6 +36,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2B1E868023486E1000D25A32 /* Koloda.framework in Embed Frameworks */,
 				2B0E8671234844650098D5E6 /* APIKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -43,7 +48,7 @@
 		2B0E8657234841800098D5E6 /* Saketify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Saketify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0E865A234841800098D5E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B0E865C234841810098D5E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2B0E865E234841810098D5E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B0E865E234841810098D5E6 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2B0E8661234841810098D5E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B0E8663234841830098D5E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B0E8666234841830098D5E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +58,9 @@
 		2B0E867A234847130098D5E6 /* BeerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerAPI.swift; sourceTree = "<group>"; };
 		2B0E867C234847710098D5E6 /* BeerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerRequest.swift; sourceTree = "<group>"; };
 		2B0E867E2348494F0098D5E6 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		2B1E867A23486D1800D25A32 /* SuggestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestViewController.swift; sourceTree = "<group>"; };
+		2B1E867C23486D2500D25A32 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		2B1E867E23486E1000D25A32 /* Koloda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Koloda.framework; path = Carthage/Build/iOS/Koloda.framework; sourceTree = "<group>"; };
 		4632C779234867B0002EE84B /* FirebaseItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseItems.swift; sourceTree = "<group>"; };
 		4632C77B2348680C002EE84B /* FirebaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAPI.swift; sourceTree = "<group>"; };
 		4632C77D23486846002EE84B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -66,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B1E867F23486E1000D25A32 /* Koloda.framework in Frameworks */,
 				2B0E8670234844650098D5E6 /* APIKit.framework in Frameworks */,
 				3FF9E2B18F5CB0D3FC56CA83 /* Pods_iOS_Saketify.framework in Frameworks */,
 			);
@@ -108,6 +117,7 @@
 		2B0E866E234844650098D5E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2B1E867E23486E1000D25A32 /* Koloda.framework */,
 				2B0E866F234844650098D5E6 /* APIKit.framework */,
 				5793985DD414D49F990FA17D /* Pods_iOS_Saketify.framework */,
 			);
@@ -156,10 +166,20 @@
 			children = (
 				2B0E865A234841800098D5E6 /* AppDelegate.swift */,
 				2B0E865C234841810098D5E6 /* SceneDelegate.swift */,
-				2B0E865E234841810098D5E6 /* ViewController.swift */,
+				2B1E867923486CE800D25A32 /* VCs */,
 				2B0E86762348460D0098D5E6 /* API */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		2B1E867923486CE800D25A32 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				2B0E865E234841810098D5E6 /* MapViewController.swift */,
+				2B1E867A23486D1800D25A32 /* SuggestViewController.swift */,
+				2B1E867C23486D2500D25A32 /* RegisterViewController.swift */,
+			);
+			path = VCs;
 			sourceTree = "<group>";
 		};
 		519EE8CD178AB8CD3EB54B48 /* Pods */ = {
@@ -252,6 +272,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Koloda.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
@@ -309,10 +330,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B0E8675234845AC0098D5E6 /* DecodeDataParser.swift in Sources */,
+				2B1E867D23486D2500D25A32 /* RegisterViewController.swift in Sources */,
 				4632C77C2348680C002EE84B /* FirebaseAPI.swift in Sources */,
 				4632C77A234867B0002EE84B /* FirebaseItems.swift in Sources */,
+				2B1E867B23486D1800D25A32 /* SuggestViewController.swift in Sources */,
 				2B0E867B234847130098D5E6 /* BeerAPI.swift in Sources */,
-				2B0E865F234841810098D5E6 /* ViewController.swift in Sources */,
+				2B0E865F234841810098D5E6 /* MapViewController.swift in Sources */,
 				2B0E865B234841800098D5E6 /* AppDelegate.swift in Sources */,
 				2B0E867F2348494F0098D5E6 /* Items.swift in Sources */,
 				2B0E865D234841810098D5E6 /* SceneDelegate.swift in Sources */,
