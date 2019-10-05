@@ -20,7 +20,7 @@ struct Shop: Codable {
     var latitude: String
     var category: String
     var imageUrl: Image
-    var budget: Int
+//    var budget: Int
 }
 
 struct Image: Codable {
