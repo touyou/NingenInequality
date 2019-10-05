@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/fragment_tinder">
+
+    <fragment
+        android:id="@+id/fragment_map"
+        android:name="com.inequality.saketify.scene.home.map.MapFragment"
+        android:label="TinderFragment"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/fragment_tinder"
+        android:name="com.inequality.saketify.scene.home.tinder.TinderFragment"
+        android:label="TinderFragment"
+        tools:layout="@layout/fragment_tinder" />
+
+    <fragment
+        android:id="@+id/fragment_register"
+        android:name="com.inequality.saketify.scene.home.register.RegisterFragment"
+        android:label="TinderFragment"
+        tools:layout="@layout/fragment_register" />
+</navigation>
