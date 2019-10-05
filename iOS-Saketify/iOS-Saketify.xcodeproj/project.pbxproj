@@ -47,6 +47,8 @@
 		4632C79F23487D0F002EE84B /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = 4632C79E23487D0F002EE84B /* FloatingPanel */; };
 		4632C7A123487D79002EE84B /* ShopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C7A023487D79002EE84B /* ShopListViewController.swift */; };
 		4632C7A323487D8B002EE84B /* ShopListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4632C7A223487D8B002EE84B /* ShopListViewController.storyboard */; };
+		4632C7A623488004002EE84B /* ShopListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C7A423488004002EE84B /* ShopListTableViewCell.swift */; };
+		4632C7A723488004002EE84B /* ShopListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4632C7A523488004002EE84B /* ShopListTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -103,6 +105,8 @@
 		4632C79923487C55002EE84B /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		4632C7A023487D79002EE84B /* ShopListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListViewController.swift; sourceTree = "<group>"; };
 		4632C7A223487D8B002EE84B /* ShopListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShopListViewController.storyboard; sourceTree = "<group>"; };
+		4632C7A423488004002EE84B /* ShopListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListTableViewCell.swift; sourceTree = "<group>"; };
+		4632C7A523488004002EE84B /* ShopListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopListTableViewCell.xib; sourceTree = "<group>"; };
 		5793985DD414D49F990FA17D /* Pods_iOS_Saketify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Saketify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66412AAA70073458FF17D2E6 /* Pods-iOS-Saketify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Saketify.debug.xcconfig"; path = "Target Support Files/Pods-iOS-Saketify/Pods-iOS-Saketify.debug.xcconfig"; sourceTree = "<group>"; };
 		B781D4B325A4D63F1E34D04A /* Pods-iOS-Saketify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Saketify.release.xcconfig"; path = "Target Support Files/Pods-iOS-Saketify/Pods-iOS-Saketify.release.xcconfig"; sourceTree = "<group>"; };
@@ -233,6 +237,8 @@
 			isa = PBXGroup;
 			children = (
 				2B1E86842348752700D25A32 /* SakeCardView.swift */,
+				4632C7A423488004002EE84B /* ShopListTableViewCell.swift */,
+				4632C7A523488004002EE84B /* ShopListTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -344,6 +350,7 @@
 			files = (
 				2B0E8667234841830098D5E6 /* LaunchScreen.storyboard in Resources */,
 				4632C77E23486846002EE84B /* GoogleService-Info.plist in Resources */,
+				4632C7A723488004002EE84B /* ShopListTableViewCell.xib in Resources */,
 				2B1E8689234879FF00D25A32 /* Map.png in Resources */,
 				4632C7A323487D8B002EE84B /* ShopListViewController.storyboard in Resources */,
 				2B0E8664234841830098D5E6 /* Assets.xcassets in Resources */,
@@ -364,6 +371,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Koloda.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/pop.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
@@ -422,6 +430,7 @@
 			files = (
 				4632C79223487C39002EE84B /* UIView+Extensions.swift in Sources */,
 				2B0E8675234845AC0098D5E6 /* DecodeDataParser.swift in Sources */,
+				4632C7A623488004002EE84B /* ShopListTableViewCell.swift in Sources */,
 				4632C79023487C39002EE84B /* UINavigationController+Extensions.swift in Sources */,
 				4632C79C23487C55002EE84B /* NibLoadable.swift in Sources */,
 				4632C7A123487D79002EE84B /* ShopListViewController.swift in Sources */,

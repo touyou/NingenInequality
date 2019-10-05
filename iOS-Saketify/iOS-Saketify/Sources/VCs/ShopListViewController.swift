@@ -12,6 +12,7 @@ final class ShopListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView! {
         didSet {
+            tableView.register(ShopListTableViewCell.self)
             tableView.delegate = self
             tableView.dataSource = self
         }
@@ -28,11 +29,13 @@ extension ShopListViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 10
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell: ShopListTableViewCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
+        
+        return cell
     }
 }
 
