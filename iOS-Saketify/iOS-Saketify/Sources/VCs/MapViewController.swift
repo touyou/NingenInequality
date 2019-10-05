@@ -18,6 +18,9 @@ final class MapViewController: UIViewController {
         didSet {
             mapView.setCenter(mapView.userLocation.coordinate, animated: true)
             mapView.userTrackingMode = .follow
+            let span = MKCoordinateSpan(latitudeDelta: 0.003, longitudeDelta: 0.003)
+            let region = MKCoordinateRegion(center: mapView.userLocation.coordinate, span: span)
+            mapView.setRegion(region, animated: true)
         }
     }
     
@@ -66,12 +69,28 @@ final class MapViewController: UIViewController {
             switch result {
             case .success(let response):
                 self.childViewController.shopData = response.rest
-                print(response.rest)
+                response.rest.forEach { shop in
+                    self.addAnnotation(Double(shop.latitude) as! CLLocationDegrees, Double(shop.longitude) as! CLLocationDegrees, shop.name)
+                }
             case .failure(let error):
                 print(error)
             }
         }
     }
+
+    func addAnnotation(_ latitude: CLLocationDegrees, _ longitude: CLLocationDegrees, _ title: String) {
+
+        // ピンの生成
+        let annotation = MKPointAnnotation()
+
+        // 緯度経度を指定
+        annotation.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        annotation.title = title
+
+        // mapViewに追加
+        mapView.addAnnotation(annotation)
+    }
+
 }
 
 
