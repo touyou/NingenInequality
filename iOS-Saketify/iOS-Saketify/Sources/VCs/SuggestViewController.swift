@@ -16,6 +16,7 @@ final class SuggestViewController: UIViewController {
         didSet {
             kolodaView.dataSource = self
             kolodaView.delegate = self
+            kolodaView.layer.cornerRadius = 20
         }
     }
     
