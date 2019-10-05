@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -33,6 +33,26 @@
 		4632C77A234867B0002EE84B /* FirebaseItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C779234867B0002EE84B /* FirebaseItems.swift */; };
 		4632C77C2348680C002EE84B /* FirebaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C77B2348680C002EE84B /* FirebaseAPI.swift */; };
 		4632C77E23486846002EE84B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4632C77D23486846002EE84B /* GoogleService-Info.plist */; };
+		4632C78B23487C39002EE84B /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C78023487C37002EE84B /* UIAlertController+Extensions.swift */; };
+		4632C78C23487C39002EE84B /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C78123487C38002EE84B /* UIApplication+Extensions.swift */; };
+		4632C78D23487C39002EE84B /* UISearchBar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C78223487C38002EE84B /* UISearchBar+Extensions.swift */; };
+		4632C78E23487C39002EE84B /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C78323487C38002EE84B /* UICollectionView+Extensions.swift */; };
+		4632C78F23487C39002EE84B /* UITabBar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C78423487C38002EE84B /* UITabBar+Extensions.swift */; };
+		4632C79023487C39002EE84B /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C78523487C38002EE84B /* UINavigationController+Extensions.swift */; };
+		4632C79123487C39002EE84B /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C78623487C39002EE84B /* UITableView+Extensions.swift */; };
+		4632C79223487C39002EE84B /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C78723487C39002EE84B /* UIView+Extensions.swift */; };
+		4632C79323487C39002EE84B /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C78823487C39002EE84B /* URL+Extensions.swift */; };
+		4632C79423487C39002EE84B /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C78923487C39002EE84B /* UIImage+Extensions.swift */; };
+		4632C79523487C39002EE84B /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C78A23487C39002EE84B /* UIColor+Extensions.swift */; };
+		4632C79A23487C55002EE84B /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C79723487C54002EE84B /* Reusable.swift */; };
+		4632C79B23487C55002EE84B /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C79823487C55002EE84B /* StoryboardInstantiable.swift */; };
+		4632C79C23487C55002EE84B /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C79923487C55002EE84B /* NibLoadable.swift */; };
+		4632C79F23487D0F002EE84B /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = 4632C79E23487D0F002EE84B /* FloatingPanel */; };
+		4632C7A123487D79002EE84B /* ShopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C7A023487D79002EE84B /* ShopListViewController.swift */; };
+		4632C7A323487D8B002EE84B /* ShopListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4632C7A223487D8B002EE84B /* ShopListViewController.storyboard */; };
+		4632C7A623488004002EE84B /* ShopListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C7A423488004002EE84B /* ShopListTableViewCell.swift */; };
+		4632C7A723488004002EE84B /* ShopListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4632C7A523488004002EE84B /* ShopListTableViewCell.xib */; };
+		4632C7AA23488BA0002EE84B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4632C7A923488BA0002EE84B /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -76,6 +96,24 @@
 		4632C779234867B0002EE84B /* FirebaseItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseItems.swift; sourceTree = "<group>"; };
 		4632C77B2348680C002EE84B /* FirebaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAPI.swift; sourceTree = "<group>"; };
 		4632C77D23486846002EE84B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4632C78023487C37002EE84B /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
+		4632C78123487C38002EE84B /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		4632C78223487C38002EE84B /* UISearchBar+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Extensions.swift"; sourceTree = "<group>"; };
+		4632C78323487C38002EE84B /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		4632C78423487C38002EE84B /* UITabBar+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBar+Extensions.swift"; sourceTree = "<group>"; };
+		4632C78523487C38002EE84B /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
+		4632C78623487C39002EE84B /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		4632C78723487C39002EE84B /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		4632C78823487C39002EE84B /* URL+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		4632C78923487C39002EE84B /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		4632C78A23487C39002EE84B /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		4632C79723487C54002EE84B /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		4632C79823487C55002EE84B /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		4632C79923487C55002EE84B /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		4632C7A023487D79002EE84B /* ShopListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListViewController.swift; sourceTree = "<group>"; };
+		4632C7A223487D8B002EE84B /* ShopListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShopListViewController.storyboard; sourceTree = "<group>"; };
+		4632C7A423488004002EE84B /* ShopListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListTableViewCell.swift; sourceTree = "<group>"; };
+		4632C7A523488004002EE84B /* ShopListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopListTableViewCell.xib; sourceTree = "<group>"; };
 		5793985DD414D49F990FA17D /* Pods_iOS_Saketify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Saketify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66412AAA70073458FF17D2E6 /* Pods-iOS-Saketify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Saketify.debug.xcconfig"; path = "Target Support Files/Pods-iOS-Saketify/Pods-iOS-Saketify.debug.xcconfig"; sourceTree = "<group>"; };
 		B781D4B325A4D63F1E34D04A /* Pods-iOS-Saketify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Saketify.release.xcconfig"; path = "Target Support Files/Pods-iOS-Saketify/Pods-iOS-Saketify.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,8 +126,10 @@
 			files = (
 				2BDC5EDC234884DB00455FC0 /* pop.framework in Frameworks */,
 				2B1E867F23486E1000D25A32 /* Koloda.framework in Frameworks */,
+				4632C79F23487D0F002EE84B /* FloatingPanel in Frameworks */,
 				2B0E8670234844650098D5E6 /* APIKit.framework in Frameworks */,
 				3FF9E2B18F5CB0D3FC56CA83 /* Pods_iOS_Saketify.framework in Frameworks */,
+				4632C7AA23488BA0002EE84B /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +221,8 @@
 				2B0E865A234841800098D5E6 /* AppDelegate.swift */,
 				2B0E865C234841810098D5E6 /* SceneDelegate.swift */,
 				2B1E8686234875A900D25A32 /* UIView+Extension.swift */,
+				4632C79623487C49002EE84B /* Protocols */,
+				4632C77F23487C1A002EE84B /* Extensions */,
 				2B1E867923486CE800D25A32 /* VCs */,
 				2B1E86832348751000D25A32 /* Views */,
 				2B0E86762348460D0098D5E6 /* API */,
@@ -195,6 +237,8 @@
 				2B0E865E234841810098D5E6 /* MapViewController.swift */,
 				2B1E867A23486D1800D25A32 /* SuggestViewController.swift */,
 				2B1E867C23486D2500D25A32 /* RegisterViewController.swift */,
+				4632C7A023487D79002EE84B /* ShopListViewController.swift */,
+				4632C7A223487D8B002EE84B /* ShopListViewController.storyboard */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -203,9 +247,39 @@
 			isa = PBXGroup;
 			children = (
 				2B1E86842348752700D25A32 /* SakeCardView.swift */,
+				4632C7A423488004002EE84B /* ShopListTableViewCell.swift */,
+				4632C7A523488004002EE84B /* ShopListTableViewCell.xib */,
 				2BDC5ED9234882D200455FC0 /* Card.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		4632C77F23487C1A002EE84B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4632C78023487C37002EE84B /* UIAlertController+Extensions.swift */,
+				4632C78123487C38002EE84B /* UIApplication+Extensions.swift */,
+				4632C78323487C38002EE84B /* UICollectionView+Extensions.swift */,
+				4632C78A23487C39002EE84B /* UIColor+Extensions.swift */,
+				4632C78923487C39002EE84B /* UIImage+Extensions.swift */,
+				4632C78523487C38002EE84B /* UINavigationController+Extensions.swift */,
+				4632C78223487C38002EE84B /* UISearchBar+Extensions.swift */,
+				4632C78423487C38002EE84B /* UITabBar+Extensions.swift */,
+				4632C78623487C39002EE84B /* UITableView+Extensions.swift */,
+				4632C78723487C39002EE84B /* UIView+Extensions.swift */,
+				4632C78823487C39002EE84B /* URL+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4632C79623487C49002EE84B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4632C79923487C55002EE84B /* NibLoadable.swift */,
+				4632C79723487C54002EE84B /* Reusable.swift */,
+				4632C79823487C55002EE84B /* StoryboardInstantiable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		519EE8CD178AB8CD3EB54B48 /* Pods */ = {
@@ -237,6 +311,10 @@
 			dependencies = (
 			);
 			name = "iOS-Saketify";
+			packageProductDependencies = (
+				4632C79E23487D0F002EE84B /* FloatingPanel */,
+				4632C7A923488BA0002EE84B /* Kingfisher */,
+			);
 			productName = "iOS-Saketify";
 			productReference = 2B0E8657234841800098D5E6 /* Saketify.app */;
 			productType = "com.apple.product-type.application";
@@ -265,6 +343,10 @@
 				Base,
 			);
 			mainGroup = 2B0E864E234841800098D5E6;
+			packageReferences = (
+				4632C79D23487D0F002EE84B /* XCRemoteSwiftPackageReference "FloatingPanel" */,
+				4632C7A823488BA0002EE84B /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 2B0E8658234841800098D5E6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -281,6 +363,9 @@
 			files = (
 				2B0E8667234841830098D5E6 /* LaunchScreen.storyboard in Resources */,
 				4632C77E23486846002EE84B /* GoogleService-Info.plist in Resources */,
+				4632C7A723488004002EE84B /* ShopListTableViewCell.xib in Resources */,
+				2B1E8689234879FF00D25A32 /* Map.png in Resources */,
+				4632C7A323487D8B002EE84B /* ShopListViewController.storyboard in Resources */,
 				2B0E8664234841830098D5E6 /* Assets.xcassets in Resources */,
 				2B0E8662234841810098D5E6 /* Main.storyboard in Resources */,
 			);
@@ -356,16 +441,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4632C79223487C39002EE84B /* UIView+Extensions.swift in Sources */,
 				2B0E8675234845AC0098D5E6 /* DecodeDataParser.swift in Sources */,
+				4632C7A623488004002EE84B /* ShopListTableViewCell.swift in Sources */,
+				4632C79023487C39002EE84B /* UINavigationController+Extensions.swift in Sources */,
+				4632C79C23487C55002EE84B /* NibLoadable.swift in Sources */,
+				4632C7A123487D79002EE84B /* ShopListViewController.swift in Sources */,
+				4632C78E23487C39002EE84B /* UICollectionView+Extensions.swift in Sources */,
+				4632C79A23487C55002EE84B /* Reusable.swift in Sources */,
 				2B1E8687234875A900D25A32 /* UIView+Extension.swift in Sources */,
+				4632C78F23487C39002EE84B /* UITabBar+Extensions.swift in Sources */,
 				2BDC5EDF2348902100455FC0 /* UIColorExtension.swift in Sources */,
 				2B1E867D23486D2500D25A32 /* RegisterViewController.swift in Sources */,
 				4632C77C2348680C002EE84B /* FirebaseAPI.swift in Sources */,
+				4632C78B23487C39002EE84B /* UIAlertController+Extensions.swift in Sources */,
+				4632C78C23487C39002EE84B /* UIApplication+Extensions.swift in Sources */,
 				4632C77A234867B0002EE84B /* FirebaseItems.swift in Sources */,
+				4632C79B23487C55002EE84B /* StoryboardInstantiable.swift in Sources */,
+				4632C79323487C39002EE84B /* URL+Extensions.swift in Sources */,
 				2B1E867B23486D1800D25A32 /* SuggestViewController.swift in Sources */,
 				2B0E867B234847130098D5E6 /* BeerAPI.swift in Sources */,
 				2B1E86852348752700D25A32 /* SakeCardView.swift in Sources */,
 				2B0E865F234841810098D5E6 /* MapViewController.swift in Sources */,
+				4632C79423487C39002EE84B /* UIImage+Extensions.swift in Sources */,
+				4632C78D23487C39002EE84B /* UISearchBar+Extensions.swift in Sources */,
+				4632C79123487C39002EE84B /* UITableView+Extensions.swift in Sources */,
+				4632C79523487C39002EE84B /* UIColor+Extensions.swift in Sources */,
 				2BDC5EDA234882D200455FC0 /* Card.swift in Sources */,
 				2B0E865B234841800098D5E6 /* AppDelegate.swift in Sources */,
 				2B0E867F2348494F0098D5E6 /* Items.swift in Sources */,
@@ -584,6 +685,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4632C79D23487D0F002EE84B /* XCRemoteSwiftPackageReference "FloatingPanel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SCENEE/FloatingPanel";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.0;
+			};
+		};
+		4632C7A823488BA0002EE84B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4632C79E23487D0F002EE84B /* FloatingPanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4632C79D23487D0F002EE84B /* XCRemoteSwiftPackageReference "FloatingPanel" */;
+			productName = FloatingPanel;
+		};
+		4632C7A923488BA0002EE84B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4632C7A823488BA0002EE84B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2B0E864F234841800098D5E6 /* Project object */;
 }

@@ -13,7 +13,7 @@ protocol BeerRequest: Request {}
 
 extension BeerRequest {
     var baseURL: URL {
-        let baseURLString: String = "https://62gxvsjd23.execute-api.ap-northeast-1.amazonaws.com/default/beer1005-1"
+        let baseURLString: String = "https://api.gnavi.co.jp/RestSearchAPI/v3/"
         return URL(string: baseURLString)!
     }
 }
