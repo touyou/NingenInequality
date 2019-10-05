@@ -19,6 +19,10 @@ final class SuggestViewController: UIViewController {
         }
     }
     
+    let imageArray: [UIImage] = [UIImage(named: "a")!,
+                                     UIImage(named: "b")!,
+                                     UIImage(named: "c")!]
+    
     
     override func viewDidLoad() {
         self.view.backgroundColor = UIColor.haikei()
@@ -32,12 +36,12 @@ extension SuggestViewController: KolodaViewDelegate {
 extension SuggestViewController: KolodaViewDataSource {
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
         let view = UIImageView()
-        view.image = UIImage(named: "image1")
+        view.image = imageArray[index]
         return view
     }
     
     func kolodaNumberOfCards(_ koloda: KolodaView) -> Int {
-        return 1
+        return imageArray.count
     }
     
     
