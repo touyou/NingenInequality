@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FloatingPanel
+import MapKit
 
 final class MapViewController: UIViewController {
 
@@ -18,3 +20,7 @@ final class MapViewController: UIViewController {
 
 }
 
+
+extension MapViewController: FloatingPanelControllerDelegate {
+    
+}
