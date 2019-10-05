@@ -41,8 +41,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fKg-RT-FVu">
-                        <rect key="frame" x="246" y="55" width="67" height="24"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_sample" translatesAutoresizingMaskIntoConstraints="NO" id="fKg-RT-FVu">
+                        <rect key="frame" x="242.5" y="62" width="64" height="19"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="イタリアン料理" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ZN-cK-X0P">
                         <rect key="frame" x="120" y="91.5" width="121.5" height="20.5"/>
@@ -52,10 +52,10 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GRW-kV-YA4">
-                        <rect key="frame" x="32" y="127.5" width="430" height="0.5"/>
+                        <rect key="frame" x="32" y="127" width="430" height="1"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="0.5" id="eSW-i4-2Hh"/>
+                            <constraint firstAttribute="height" constant="1" id="eSW-i4-2Hh"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -81,7 +81,17 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="genreLabel" destination="7ZN-cK-X0P" id="TFU-vi-vsD"/>
+                <outlet property="priceLabel" destination="wq9-gA-rGF" id="dcA-nY-M2Q"/>
+                <outlet property="rateLabel" destination="fKg-RT-FVu" id="VQS-61-fdU"/>
+                <outlet property="shopImageView" destination="FvR-6t-Erf" id="wp5-gw-WrJ"/>
+                <outlet property="shopNameLabel" destination="Qki-aY-ddq" id="j9Y-OO-U83"/>
+            </connections>
             <point key="canvasLocation" x="257.97101449275362" y="180.80357142857142"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="star_sample" width="64" height="19"/>
+    </resources>
 </document>

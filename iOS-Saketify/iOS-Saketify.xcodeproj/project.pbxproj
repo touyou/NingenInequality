@@ -49,6 +49,7 @@
 		4632C7A323487D8B002EE84B /* ShopListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4632C7A223487D8B002EE84B /* ShopListViewController.storyboard */; };
 		4632C7A623488004002EE84B /* ShopListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C7A423488004002EE84B /* ShopListTableViewCell.swift */; };
 		4632C7A723488004002EE84B /* ShopListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4632C7A523488004002EE84B /* ShopListTableViewCell.xib */; };
+		4632C7AA23488BA0002EE84B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4632C7A923488BA0002EE84B /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -121,6 +122,7 @@
 				4632C79F23487D0F002EE84B /* FloatingPanel in Frameworks */,
 				2B0E8670234844650098D5E6 /* APIKit.framework in Frameworks */,
 				3FF9E2B18F5CB0D3FC56CA83 /* Pods_iOS_Saketify.framework in Frameworks */,
+				4632C7AA23488BA0002EE84B /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +304,7 @@
 			name = "iOS-Saketify";
 			packageProductDependencies = (
 				4632C79E23487D0F002EE84B /* FloatingPanel */,
+				4632C7A923488BA0002EE84B /* Kingfisher */,
 			);
 			productName = "iOS-Saketify";
 			productReference = 2B0E8657234841800098D5E6 /* Saketify.app */;
@@ -333,6 +336,7 @@
 			mainGroup = 2B0E864E234841800098D5E6;
 			packageReferences = (
 				4632C79D23487D0F002EE84B /* XCRemoteSwiftPackageReference "FloatingPanel" */,
+				4632C7A823488BA0002EE84B /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 2B0E8658234841800098D5E6 /* Products */;
 			projectDirPath = "";
@@ -678,6 +682,14 @@
 				minimumVersion = 1.7.0;
 			};
 		};
+		4632C7A823488BA0002EE84B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -685,6 +697,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4632C79D23487D0F002EE84B /* XCRemoteSwiftPackageReference "FloatingPanel" */;
 			productName = FloatingPanel;
+		};
+		4632C7A923488BA0002EE84B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4632C7A823488BA0002EE84B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

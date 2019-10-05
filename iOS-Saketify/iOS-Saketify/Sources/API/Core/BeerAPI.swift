@@ -15,6 +15,7 @@ final class BeerAPI {
     struct SuggestBeer: BeerRequest {
         let longitude: String
         let latitude: String
+        let keyId: String = "53183dc342ed72e6a3771606e79ead9c"
         
         typealias Response = SuggestBeerRequest
         
@@ -23,13 +24,14 @@ final class BeerAPI {
         }
         
         var path: String {
-            return "/default/beer1005-1"
+            return ""
         }
         
         var parameters: Any? {
             return [
-                "x": longitude,
-                "y": latitude
+                "keyid": keyId,
+                "longitude": longitude,
+                "latitude": latitude
             ]
         }
     }
