@@ -13,7 +13,27 @@
 		2B0E8662234841810098D5E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0E8660234841810098D5E6 /* Main.storyboard */; };
 		2B0E8664234841830098D5E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0E8663234841830098D5E6 /* Assets.xcassets */; };
 		2B0E8667234841830098D5E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0E8665234841830098D5E6 /* LaunchScreen.storyboard */; };
+		2B0E8670234844650098D5E6 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0E866F234844650098D5E6 /* APIKit.framework */; };
+		2B0E8671234844650098D5E6 /* APIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0E866F234844650098D5E6 /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B0E8675234845AC0098D5E6 /* DecodeDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E8674234845AC0098D5E6 /* DecodeDataParser.swift */; };
+		2B0E867B234847130098D5E6 /* BeerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E867A234847130098D5E6 /* BeerAPI.swift */; };
+		2B0E867D234847710098D5E6 /* BeerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E867C234847710098D5E6 /* BeerRequest.swift */; };
+		2B0E867F2348494F0098D5E6 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E867E2348494F0098D5E6 /* Items.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2B0E8672234844650098D5E6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2B0E8671234844650098D5E6 /* APIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2B0E8657234841800098D5E6 /* Saketify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Saketify.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +44,11 @@
 		2B0E8663234841830098D5E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B0E8666234841830098D5E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B0E8668234841830098D5E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B0E866F234844650098D5E6 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		2B0E8674234845AC0098D5E6 /* DecodeDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodeDataParser.swift; sourceTree = "<group>"; };
+		2B0E867A234847130098D5E6 /* BeerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerAPI.swift; sourceTree = "<group>"; };
+		2B0E867C234847710098D5E6 /* BeerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerRequest.swift; sourceTree = "<group>"; };
+		2B0E867E2348494F0098D5E6 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B0E8670234844650098D5E6 /* APIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +68,7 @@
 			children = (
 				2B0E8659234841800098D5E6 /* iOS-Saketify */,
 				2B0E8658234841800098D5E6 /* Products */,
+				2B0E866E234844650098D5E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +86,56 @@
 				2B0E865A234841800098D5E6 /* AppDelegate.swift */,
 				2B0E865C234841810098D5E6 /* SceneDelegate.swift */,
 				2B0E865E234841810098D5E6 /* ViewController.swift */,
+				2B0E86762348460D0098D5E6 /* API */,
 				2B0E8660234841810098D5E6 /* Main.storyboard */,
 				2B0E8663234841830098D5E6 /* Assets.xcassets */,
 				2B0E8665234841830098D5E6 /* LaunchScreen.storyboard */,
 				2B0E8668234841830098D5E6 /* Info.plist */,
 			);
 			path = "iOS-Saketify";
+			sourceTree = "<group>";
+		};
+		2B0E866E234844650098D5E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B0E866F234844650098D5E6 /* APIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B0E86762348460D0098D5E6 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2B0E8677234846210098D5E6 /* Core */,
+				2B0E8678234846340098D5E6 /* Request */,
+				2B0E8679234846420098D5E6 /* Response */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		2B0E8677234846210098D5E6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2B0E8674234845AC0098D5E6 /* DecodeDataParser.swift */,
+				2B0E867A234847130098D5E6 /* BeerAPI.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2B0E8678234846340098D5E6 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				2B0E867C234847710098D5E6 /* BeerRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		2B0E8679234846420098D5E6 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				2B0E867E2348494F0098D5E6 /* Items.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +148,8 @@
 				2B0E8653234841800098D5E6 /* Sources */,
 				2B0E8654234841800098D5E6 /* Frameworks */,
 				2B0E8655234841800098D5E6 /* Resources */,
+				2B0E8672234844650098D5E6 /* Embed Frameworks */,
+				2B0E86732348446E0098D5E6 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -133,14 +206,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B0E86732348446E0098D5E6 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2B0E8653234841800098D5E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B0E8675234845AC0098D5E6 /* DecodeDataParser.swift in Sources */,
+				2B0E867B234847130098D5E6 /* BeerAPI.swift in Sources */,
 				2B0E865F234841810098D5E6 /* ViewController.swift in Sources */,
 				2B0E865B234841800098D5E6 /* AppDelegate.swift in Sources */,
+				2B0E867F2348494F0098D5E6 /* Items.swift in Sources */,
 				2B0E865D234841810098D5E6 /* SceneDelegate.swift in Sources */,
+				2B0E867D234847710098D5E6 /* BeerRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +385,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56787CM63P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "iOS-Saketify/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -304,6 +407,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56787CM63P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "iOS-Saketify/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
