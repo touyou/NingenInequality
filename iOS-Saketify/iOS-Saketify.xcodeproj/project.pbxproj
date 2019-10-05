@@ -19,6 +19,7 @@
 		2B0E867B234847130098D5E6 /* BeerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E867A234847130098D5E6 /* BeerAPI.swift */; };
 		2B0E867D234847710098D5E6 /* BeerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E867C234847710098D5E6 /* BeerRequest.swift */; };
 		2B0E867F2348494F0098D5E6 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E867E2348494F0098D5E6 /* Items.swift */; };
+		3FF9E2B18F5CB0D3FC56CA83 /* Pods_iOS_Saketify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5793985DD414D49F990FA17D /* Pods_iOS_Saketify.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,9 @@
 		2B0E867A234847130098D5E6 /* BeerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerAPI.swift; sourceTree = "<group>"; };
 		2B0E867C234847710098D5E6 /* BeerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerRequest.swift; sourceTree = "<group>"; };
 		2B0E867E2348494F0098D5E6 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		5793985DD414D49F990FA17D /* Pods_iOS_Saketify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Saketify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66412AAA70073458FF17D2E6 /* Pods-iOS-Saketify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Saketify.debug.xcconfig"; path = "Target Support Files/Pods-iOS-Saketify/Pods-iOS-Saketify.debug.xcconfig"; sourceTree = "<group>"; };
+		B781D4B325A4D63F1E34D04A /* Pods-iOS-Saketify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Saketify.release.xcconfig"; path = "Target Support Files/Pods-iOS-Saketify/Pods-iOS-Saketify.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B0E8670234844650098D5E6 /* APIKit.framework in Frameworks */,
+				3FF9E2B18F5CB0D3FC56CA83 /* Pods_iOS_Saketify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +74,7 @@
 				2B0E8659234841800098D5E6 /* iOS-Saketify */,
 				2B0E8658234841800098D5E6 /* Products */,
 				2B0E866E234844650098D5E6 /* Frameworks */,
+				519EE8CD178AB8CD3EB54B48 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,14 +89,11 @@
 		2B0E8659234841800098D5E6 /* iOS-Saketify */ = {
 			isa = PBXGroup;
 			children = (
-				2B0E865A234841800098D5E6 /* AppDelegate.swift */,
-				2B0E865C234841810098D5E6 /* SceneDelegate.swift */,
-				2B0E865E234841810098D5E6 /* ViewController.swift */,
-				2B0E86762348460D0098D5E6 /* API */,
 				2B0E8660234841810098D5E6 /* Main.storyboard */,
 				2B0E8663234841830098D5E6 /* Assets.xcassets */,
 				2B0E8665234841830098D5E6 /* LaunchScreen.storyboard */,
 				2B0E8668234841830098D5E6 /* Info.plist */,
+				2B0E868023484B7D0098D5E6 /* Sources */,
 			);
 			path = "iOS-Saketify";
 			sourceTree = "<group>";
@@ -99,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				2B0E866F234844650098D5E6 /* APIKit.framework */,
+				5793985DD414D49F990FA17D /* Pods_iOS_Saketify.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -138,6 +142,26 @@
 			path = Response;
 			sourceTree = "<group>";
 		};
+		2B0E868023484B7D0098D5E6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2B0E865A234841800098D5E6 /* AppDelegate.swift */,
+				2B0E865C234841810098D5E6 /* SceneDelegate.swift */,
+				2B0E865E234841810098D5E6 /* ViewController.swift */,
+				2B0E86762348460D0098D5E6 /* API */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		519EE8CD178AB8CD3EB54B48 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66412AAA70073458FF17D2E6 /* Pods-iOS-Saketify.debug.xcconfig */,
+				B781D4B325A4D63F1E34D04A /* Pods-iOS-Saketify.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,11 +169,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B0E866B234841830098D5E6 /* Build configuration list for PBXNativeTarget "iOS-Saketify" */;
 			buildPhases = (
+				44956A0EE9956F071C090AD5 /* [CP] Check Pods Manifest.lock */,
 				2B0E8653234841800098D5E6 /* Sources */,
 				2B0E8654234841800098D5E6 /* Frameworks */,
 				2B0E8655234841800098D5E6 /* Resources */,
 				2B0E8672234844650098D5E6 /* Embed Frameworks */,
 				2B0E86732348446E0098D5E6 /* Carthage */,
+				C8EDAEE0F4ADEB6A4AE0EF36 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,6 +251,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+		44956A0EE9956F071C090AD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS-Saketify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8EDAEE0F4ADEB6A4AE0EF36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS-Saketify/Pods-iOS-Saketify-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS-Saketify/Pods-iOS-Saketify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -381,6 +463,7 @@
 		};
 		2B0E866C234841830098D5E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66412AAA70073458FF17D2E6 /* Pods-iOS-Saketify.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -390,6 +473,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "iOS-Saketify/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -403,6 +487,7 @@
 		};
 		2B0E866D234841830098D5E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B781D4B325A4D63F1E34D04A /* Pods-iOS-Saketify.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -412,6 +497,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "iOS-Saketify/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
