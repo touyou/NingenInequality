@@ -22,4 +22,9 @@ extension UIColor {
         let karakurenaiColor = UIColor.init(code: "#060E1E")
         return karakurenaiColor
     }
+    
+    class func tabBar() -> UIColor {
+        let karakurenaiColor = UIColor.init(code: "#060E1E")
+        return karakurenaiColor
+    }
 }

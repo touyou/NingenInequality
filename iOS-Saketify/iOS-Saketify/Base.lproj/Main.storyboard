@@ -29,7 +29,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="placeholder" id="2rO-CD-wFs"/>
-                  <connections>
+                    <connections>
                         <outlet property="mapView" destination="41l-dH-R3I" id="0pW-Vw-RCR"/>
                     </connections>
                 </viewController>
@@ -86,10 +86,10 @@
             </objects>
             <point key="canvasLocation" x="2029" y="852"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Custom Tab Bar Controller-->
         <scene sceneID="tQ4-1O-Vjc">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="rBY-Gk-4aq" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="rBY-Gk-4aq" customClass="CustomTabBarController" customModule="Saketify" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pem-Nx-epD">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
