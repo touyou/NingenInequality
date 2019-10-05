@@ -12,17 +12,15 @@ import Koloda
 final class SuggestViewController: UIViewController {
     private let cardWidth = CGFloat(250)
     private let cardHeight = CGFloat(300)
-//    var kolodaView = KolodaView() {
-//        didSet {
-//            kolodaView.delegate = self
-//            kolodaView.dataSource = self
-//        }
-//    }
+    @IBOutlet var kolodaView: KolodaView!
+    
     
     override func viewDidLoad() {
+        
 //        kolodaView.frame = CGRect(x: 0, y: 0, width: cardWidth, height: cardHeight)
 //        kolodaView.center = self.view.center
 //        self.view.addSubview(kolodaView)
+        kolodaView.dataSource = self
     }
 }
 
@@ -32,9 +30,8 @@ extension SuggestViewController: KolodaViewDelegate {
 
 extension SuggestViewController: KolodaViewDataSource {
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
-        let card = SakeCardView()
-        card.sakeImageView.image = UIImage(named: "Map.png")
-        card.label.text = "this is a test"
+        let view = UIImageView()
+        view.image = UIImage(named: "image1")
         return view
     }
     

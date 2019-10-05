@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Map View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="Saketify" customModuleProvider="target" sceneMemberID="viewController">
@@ -28,29 +28,39 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="2rO-CD-wFs"/>
+                    <tabBarItem key="tabBarItem" title="" image="placeholder" id="2rO-CD-wFs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2029" y="-583"/>
         </scene>
-        <!--Item-->
+        <!--Suggest View Controller-->
         <scene sceneID="5Qo-es-7hl">
             <objects>
                 <viewController id="CBu-r1-RRx" customClass="SuggestViewController" customModule="Saketify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E2F-dv-Nf3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yeh-lq-OJo" customClass="KolodaView" customModule="Koloda">
+                                <rect key="frame" x="87" y="198" width="240" height="327"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Tm4-91-sGe"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="VoG-fD-2dk"/>
+                    <tabBarItem key="tabBarItem" title="" image="mainlogo" id="VoG-fD-2dk"/>
+                    <connections>
+                        <outlet property="kolodaView" destination="yeh-lq-OJo" id="6zD-L8-jui"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c5P-K7-kgb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2030" y="128"/>
+            <point key="canvasLocation" x="2028.985507246377" y="127.90178571428571"/>
         </scene>
-        <!--Item-->
+        <!--Register View Controller-->
         <scene sceneID="0gc-6H-hFU">
             <objects>
                 <viewController id="kA3-kG-vGy" customClass="RegisterViewController" customModule="Saketify" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,7 +70,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="axV-JD-UoI"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="YtH-np-g5n"/>
+                    <tabBarItem key="tabBarItem" title="" image="magnifying-glass" id="YtH-np-g5n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xo5-55-lGR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,6 +82,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="rBY-Gk-4aq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pem-Nx-epD">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -86,4 +97,9 @@
             <point key="canvasLocation" x="1047.8260869565217" y="127.90178571428571"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="magnifying-glass" width="17.333333969116211" height="18"/>
+        <image name="mainlogo" width="26" height="28"/>
+        <image name="placeholder" width="14" height="20.666666030883789"/>
+    </resources>
 </document>
