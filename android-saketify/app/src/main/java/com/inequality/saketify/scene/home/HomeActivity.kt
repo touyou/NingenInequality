@@ -1,6 +1,5 @@
 package com.inequality.saketify.scene.home
 
-import android.Manifest
 import android.content.Context
 import android.location.Criteria
 import android.location.Location
@@ -20,10 +19,7 @@ import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.inequality.saketify.R
 import kotlinx.android.synthetic.main.activity_main.*
-import permissions.dispatcher.NeedsPermission
-import permissions.dispatcher.RuntimePermissions
 
-@RuntimePermissions
 class HomeActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
 
     private lateinit var googleMap: GoogleMap
@@ -58,7 +54,6 @@ class HomeActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
         googleMap.addMarker(MarkerOptions().position(tokyo))
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(tokyo, 14F))
         initLocationManager()
-        getLocationWithPermissionCheck()
     }
 
     override fun onLocationChanged(location: Location?) {
@@ -107,10 +102,5 @@ class HomeActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
         criteria.horizontalAccuracy = Criteria.ACCURACY_HIGH
         criteria.verticalAccuracy = Criteria.ACCURACY_HIGH
         bestProvider = locationManager.getBestProvider(criteria, true)
-    }
-
-    @NeedsPermission(Manifest.permission.ACCESS_FINE_LOCATION)
-    fun getLocation() {
-        locationManager.requestLocationUpdates(bestProvider, 60_000L, 3F, this)
     }
 }

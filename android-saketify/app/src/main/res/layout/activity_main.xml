@@ -19,7 +19,7 @@
             app:layout_constraintBottom_toTopOf="@id/list"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:context=".scene.home.map.MapsActivity" />
+            tools:context=".scene.home.HomeActivity" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_navigation"
