@@ -364,7 +364,6 @@
 				2B0E8667234841830098D5E6 /* LaunchScreen.storyboard in Resources */,
 				4632C77E23486846002EE84B /* GoogleService-Info.plist in Resources */,
 				4632C7A723488004002EE84B /* ShopListTableViewCell.xib in Resources */,
-				2B1E8689234879FF00D25A32 /* Map.png in Resources */,
 				4632C7A323487D8B002EE84B /* ShopListViewController.storyboard in Resources */,
 				2B0E8664234841830098D5E6 /* Assets.xcassets in Resources */,
 				2B0E8662234841810098D5E6 /* Main.storyboard in Resources */,
@@ -619,7 +618,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.0;
-				DEVELOPMENT_TEAM = 56787CM63P;
+				DEVELOPMENT_TEAM = B4S4333JDW;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -645,7 +644,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.0;
-				DEVELOPMENT_TEAM = 56787CM63P;
+				DEVELOPMENT_TEAM = B4S4333JDW;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
