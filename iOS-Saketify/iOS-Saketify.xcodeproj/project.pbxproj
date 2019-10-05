@@ -13,6 +13,7 @@
 		2B0E8662234841810098D5E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0E8660234841810098D5E6 /* Main.storyboard */; };
 		2B0E8664234841830098D5E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0E8663234841830098D5E6 /* Assets.xcassets */; };
 		2B0E8667234841830098D5E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0E8665234841830098D5E6 /* LaunchScreen.storyboard */; };
+		4632C776234845D3002EE84B /* Sake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C775234845D3002EE84B /* Sake.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2B0E8663234841830098D5E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B0E8666234841830098D5E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B0E8668234841830098D5E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4632C775234845D3002EE84B /* Sake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sake.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		2B0E8659234841800098D5E6 /* iOS-Saketify */ = {
 			isa = PBXGroup;
 			children = (
+				4632C77423484519002EE84B /* Entity */,
 				2B0E865A234841800098D5E6 /* AppDelegate.swift */,
 				2B0E865C234841810098D5E6 /* SceneDelegate.swift */,
 				2B0E865E234841810098D5E6 /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				2B0E8668234841830098D5E6 /* Info.plist */,
 			);
 			path = "iOS-Saketify";
+			sourceTree = "<group>";
+		};
+		4632C77423484519002EE84B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				4632C775234845D3002EE84B /* Sake.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B0E865F234841810098D5E6 /* ViewController.swift in Sources */,
+				4632C776234845D3002EE84B /* Sake.swift in Sources */,
 				2B0E865B234841800098D5E6 /* AppDelegate.swift in Sources */,
 				2B0E865D234841810098D5E6 /* SceneDelegate.swift in Sources */,
 			);
