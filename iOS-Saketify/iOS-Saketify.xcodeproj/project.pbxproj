@@ -14,6 +14,7 @@
 		2B0E8664234841830098D5E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0E8663234841830098D5E6 /* Assets.xcassets */; };
 		2B0E8667234841830098D5E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0E8665234841830098D5E6 /* LaunchScreen.storyboard */; };
 		4632C776234845D3002EE84B /* Sake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C775234845D3002EE84B /* Sake.swift */; };
+		4632C778234847F8002EE84B /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C777234847F8002EE84B /* Shop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2B0E8666234841830098D5E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B0E8668234841830098D5E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4632C775234845D3002EE84B /* Sake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sake.swift; sourceTree = "<group>"; };
+		4632C777234847F8002EE84B /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				4632C775234845D3002EE84B /* Sake.swift */,
+				4632C777234847F8002EE84B /* Shop.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				2B0E865F234841810098D5E6 /* ViewController.swift in Sources */,
 				4632C776234845D3002EE84B /* Sake.swift in Sources */,
 				2B0E865B234841800098D5E6 /* AppDelegate.swift in Sources */,
+				4632C778234847F8002EE84B /* Shop.swift in Sources */,
 				2B0E865D234841810098D5E6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
