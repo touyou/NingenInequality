@@ -35,7 +35,7 @@ final class MapViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
 
-        floatingPanel.removePanelFromParent(animated: animated)
+//        floatingPanel.removePanelFromParent(animated: animated)
     }
 
     private func setupFloatingPanel() {
@@ -49,7 +49,7 @@ final class MapViewController: UIViewController {
         floatingPanel.track(scrollView: childViewController.tableView)
         floatingPanel.addPanel(toParent: self)
 
-        updateLocation(35.6551564, 139.6936439)
+        updateLocation(139.6936439, 35.6551564)
     }
 
     private func setupLocation() {
@@ -61,6 +61,7 @@ final class MapViewController: UIViewController {
     func updateLocation(_ longitude: Double, _ latitude: Double) {
 
         let apiRequest = BeerAPI.SuggestBeer(longitude: String(longitude), latitude: String(latitude))
+        print(try! apiRequest.buildURLRequest())
         Session.send(apiRequest) { result in
             switch result {
             case .success(let response):

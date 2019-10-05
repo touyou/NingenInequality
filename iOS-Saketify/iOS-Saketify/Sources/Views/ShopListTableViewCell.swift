@@ -27,8 +27,8 @@ class ShopListTableViewCell: UITableViewCell {
     func setupView(item: Shop) {
         shopNameLabel.text = item.name
         genreLabel.text = item.category
-        priceLabel.text = "¥\(item.budget)"
-        shopImageView.kf.setImage(with: URL(string: item.imageUrl.shopImage1)!)
+        priceLabel.text = "¥3000"
+        shopImageView.kf.setImage(with: URL(string: item.imageUrl.shopImage1), placeholder: UIImage(named: "restaurant"))
     }
 }
 
