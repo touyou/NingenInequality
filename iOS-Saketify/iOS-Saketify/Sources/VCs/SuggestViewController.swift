@@ -12,15 +12,16 @@ import Koloda
 final class SuggestViewController: UIViewController {
     private let cardWidth = CGFloat(250)
     private let cardHeight = CGFloat(300)
-    @IBOutlet var kolodaView: KolodaView!
+    @IBOutlet var kolodaView: KolodaView! {
+        didSet {
+            kolodaView.dataSource = self
+            kolodaView.delegate = self
+        }
+    }
     
     
     override func viewDidLoad() {
-        
-//        kolodaView.frame = CGRect(x: 0, y: 0, width: cardWidth, height: cardHeight)
-//        kolodaView.center = self.view.center
-//        self.view.addSubview(kolodaView)
-        kolodaView.dataSource = self
+        self.view.backgroundColor = UIColor.haikei()
     }
 }
 

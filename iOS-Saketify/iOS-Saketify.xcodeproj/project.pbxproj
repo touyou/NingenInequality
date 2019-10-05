@@ -28,6 +28,7 @@
 		2BDC5EDA234882D200455FC0 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDC5ED9234882D200455FC0 /* Card.swift */; };
 		2BDC5EDC234884DB00455FC0 /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BDC5EDB234884DA00455FC0 /* pop.framework */; };
 		2BDC5EDD234884DB00455FC0 /* pop.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BDC5EDB234884DA00455FC0 /* pop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2BDC5EDF2348902100455FC0 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDC5EDE2348902100455FC0 /* UIColorExtension.swift */; };
 		3FF9E2B18F5CB0D3FC56CA83 /* Pods_iOS_Saketify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5793985DD414D49F990FA17D /* Pods_iOS_Saketify.framework */; };
 		4632C77A234867B0002EE84B /* FirebaseItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C779234867B0002EE84B /* FirebaseItems.swift */; };
 		4632C77C2348680C002EE84B /* FirebaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C77B2348680C002EE84B /* FirebaseAPI.swift */; };
@@ -71,6 +72,7 @@
 		2B1E8686234875A900D25A32 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		2BDC5ED9234882D200455FC0 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		2BDC5EDB234884DA00455FC0 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = Carthage/Build/iOS/pop.framework; sourceTree = "<group>"; };
+		2BDC5EDE2348902100455FC0 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		4632C779234867B0002EE84B /* FirebaseItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseItems.swift; sourceTree = "<group>"; };
 		4632C77B2348680C002EE84B /* FirebaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAPI.swift; sourceTree = "<group>"; };
 		4632C77D23486846002EE84B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				2B1E867923486CE800D25A32 /* VCs */,
 				2B1E86832348751000D25A32 /* Views */,
 				2B0E86762348460D0098D5E6 /* API */,
+				2BDC5EDE2348902100455FC0 /* UIColorExtension.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 			files = (
 				2B0E8675234845AC0098D5E6 /* DecodeDataParser.swift in Sources */,
 				2B1E8687234875A900D25A32 /* UIView+Extension.swift in Sources */,
+				2BDC5EDF2348902100455FC0 /* UIColorExtension.swift in Sources */,
 				2B1E867D23486D2500D25A32 /* RegisterViewController.swift in Sources */,
 				4632C77C2348680C002EE84B /* FirebaseAPI.swift in Sources */,
 				4632C77A234867B0002EE84B /* FirebaseItems.swift in Sources */,

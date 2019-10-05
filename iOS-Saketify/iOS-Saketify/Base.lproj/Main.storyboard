@@ -42,13 +42,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yeh-lq-OJo" customClass="KolodaView" customModule="Koloda">
-                                <rect key="frame" x="87" y="198" width="240" height="327"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yeh-lq-OJo" customClass="KolodaView" customModule="Koloda">
+                                <rect key="frame" x="60" y="198" width="294" height="360"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yeh-lq-OJo" secondAttribute="height" multiplier="89:109" id="aug-AA-3vd"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yeh-lq-OJo" firstAttribute="leading" secondItem="Tm4-91-sGe" secondAttribute="leading" constant="60" id="3yh-aR-TcQ"/>
+                            <constraint firstItem="Tm4-91-sGe" firstAttribute="trailing" secondItem="yeh-lq-OJo" secondAttribute="trailing" constant="60" id="fpu-vQ-2YE"/>
+                            <constraint firstItem="yeh-lq-OJo" firstAttribute="top" secondItem="Tm4-91-sGe" secondAttribute="top" constant="154" id="rwo-h0-s44"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Tm4-91-sGe"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="mainlogo" id="VoG-fD-2dk"/>
