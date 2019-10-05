@@ -25,6 +25,7 @@
 		2B1E868023486E1000D25A32 /* Koloda.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B1E867E23486E1000D25A32 /* Koloda.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2B1E86852348752700D25A32 /* SakeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E86842348752700D25A32 /* SakeCardView.swift */; };
 		2B1E8687234875A900D25A32 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1E8686234875A900D25A32 /* UIView+Extension.swift */; };
+		2B1E8689234879FF00D25A32 /* Map.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1E8688234879FF00D25A32 /* Map.png */; };
 		3FF9E2B18F5CB0D3FC56CA83 /* Pods_iOS_Saketify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5793985DD414D49F990FA17D /* Pods_iOS_Saketify.framework */; };
 		4632C77A234867B0002EE84B /* FirebaseItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C779234867B0002EE84B /* FirebaseItems.swift */; };
 		4632C77C2348680C002EE84B /* FirebaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4632C77B2348680C002EE84B /* FirebaseAPI.swift */; };
@@ -65,6 +66,7 @@
 		2B1E867E23486E1000D25A32 /* Koloda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Koloda.framework; path = Carthage/Build/iOS/Koloda.framework; sourceTree = "<group>"; };
 		2B1E86842348752700D25A32 /* SakeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SakeCardView.swift; sourceTree = "<group>"; };
 		2B1E8686234875A900D25A32 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		2B1E8688234879FF00D25A32 /* Map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map.png; sourceTree = "<group>"; };
 		4632C779234867B0002EE84B /* FirebaseItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseItems.swift; sourceTree = "<group>"; };
 		4632C77B2348680C002EE84B /* FirebaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAPI.swift; sourceTree = "<group>"; };
 		4632C77D23486846002EE84B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				2B0E8660234841810098D5E6 /* Main.storyboard */,
 				2B0E8663234841830098D5E6 /* Assets.xcassets */,
 				2B0E8665234841830098D5E6 /* LaunchScreen.storyboard */,
+				2B1E8688234879FF00D25A32 /* Map.png */,
 				2B0E8668234841830098D5E6 /* Info.plist */,
 				4632C77D23486846002EE84B /* GoogleService-Info.plist */,
 				2B0E868023484B7D0098D5E6 /* Sources */,
@@ -269,6 +272,7 @@
 			files = (
 				2B0E8667234841830098D5E6 /* LaunchScreen.storyboard in Resources */,
 				4632C77E23486846002EE84B /* GoogleService-Info.plist in Resources */,
+				2B1E8689234879FF00D25A32 /* Map.png in Resources */,
 				2B0E8664234841830098D5E6 /* Assets.xcassets in Resources */,
 				2B0E8662234841810098D5E6 /* Main.storyboard in Resources */,
 			);
