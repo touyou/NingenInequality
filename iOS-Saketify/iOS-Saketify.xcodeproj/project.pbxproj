@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2B0E8657234841800098D5E6 /* iOS-Saketify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Saketify.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B0E8657234841800098D5E6 /* Saketify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Saketify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0E865A234841800098D5E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B0E865C234841810098D5E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2B0E865E234841810098D5E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		2B0E8658234841800098D5E6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2B0E8657234841800098D5E6 /* iOS-Saketify.app */,
+				2B0E8657234841800098D5E6 /* Saketify.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,7 +84,7 @@
 			);
 			name = "iOS-Saketify";
 			productName = "iOS-Saketify";
-			productReference = 2B0E8657234841800098D5E6 /* iOS-Saketify.app */;
+			productReference = 2B0E8657234841800098D5E6 /* Saketify.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -292,7 +292,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "inequality.iOS-Saketify";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Saketify;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -310,7 +310,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "inequality.iOS-Saketify";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Saketify;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
