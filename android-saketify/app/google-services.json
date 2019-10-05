@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "378445438524",
+    "firebase_url": "https://ningeninequality.firebaseio.com",
+    "project_id": "ningeninequality",
+    "storage_bucket": "ningeninequality.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378445438524:android:e9df1b0225d8f979c8ad39",
+        "android_client_info": {
+          "package_name": "com.inequality.Saketify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "378445438524-9qnqu2j49l233ar6khjcj3v07b0sj5ol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-pg7YUvvSWUOuBrUM_eX17TM0YHOBLxc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "378445438524-9qnqu2j49l233ar6khjcj3v07b0sj5ol.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "378445438524-5ngss512vg8mf1sfnsnrruid3ecb5i5u.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.inequality.Saketify"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
