@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Sake: Codable {
+struct BeerItem: Codable {
     var id: UInt
     var name: String
     var rating: Double
