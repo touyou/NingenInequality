@@ -9,17 +9,25 @@
 import UIKit
 import FloatingPanel
 import MapKit
+import CoreLocation
 
 final class MapViewController: UIViewController {
 
-    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var mapView: MKMapView! {
+        didSet {
+            mapView.setCenter(mapView.userLocation.coordinate, animated: true)
+            mapView.userTrackingMode = .follow
+        }
+    }
     
     private var floatingPanel: FloatingPanelController!
+    private var locationManager: CLLocationManager!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupFloatingPanel()
+        setupLocation()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -28,18 +36,30 @@ final class MapViewController: UIViewController {
         floatingPanel.removePanelFromParent(animated: animated)
     }
 
-    func setupFloatingPanel() {
+    private func setupFloatingPanel() {
         floatingPanel = FloatingPanelController()
         floatingPanel.delegate = self
+
+        floatingPanel.surfaceView.cornerRadius = 16.0
 
         let viewController = ShopListViewController.instantiate()
         floatingPanel.set(contentViewController: viewController)
         floatingPanel.track(scrollView: viewController.tableView)
         floatingPanel.addPanel(toParent: self)
     }
+
+    private func setupLocation() {
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.requestAlwaysAuthorization()
+    }
 }
 
 
 extension MapViewController: FloatingPanelControllerDelegate {
 
+}
+
+extension MapViewController: CLLocationManagerDelegate {
+    
 }

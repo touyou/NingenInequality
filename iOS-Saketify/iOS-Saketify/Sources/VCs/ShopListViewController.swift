@@ -15,6 +15,8 @@ final class ShopListViewController: UIViewController {
             tableView.register(ShopListTableViewCell.self)
             tableView.delegate = self
             tableView.dataSource = self
+            tableView.tableFooterView = UIView()
+            tableView.separatorStyle = .none
         }
     }
 
@@ -34,7 +36,7 @@ extension ShopListViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: ShopListTableViewCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
-        
+
         return cell
     }
 }
